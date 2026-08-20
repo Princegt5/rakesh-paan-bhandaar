@@ -91,11 +91,11 @@
 
             <ul>
 
-                <li>🍃 Fresh Paan</li>
+                <li>🍃 Meetha Paan</li>
 
-                <li>🥥 Special Paan</li>
+                <li>🍃 Tobacco Paan </li>
 
-                <li>🍬 Mouth Fresheners</li>
+                <li>🍃 Mouth Fresheners</li>
 
                 <li>🎁 Gift Packs</li>
 
@@ -129,7 +129,7 @@
             <div class="product-image">
 
                 <img
-                    src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80"
+                    src="C:\Users\LENOVO\OneDrive\Desktop\index.html\images\Meetha-paan.jpeg"
                     alt="Meetha Paan"
                 >
 
@@ -143,23 +143,23 @@
                 </span>
 
                 <h3>
-                    Meetha Paan
+                    Meetha <br>
+                    Paan
                 </h3>
 
                 <p>
-                    Traditional sweet paan with delicious
-                    flavours.
+                    Made with fresh betel leaves and traditional ingredients for a delightful taste.
                 </p>
 
                 <div class="product-bottom">
 
                     <strong>
-                        ₹40
+                        ₹50
                     </strong>
 
                     <button
                         type="button"
-                        onclick="addToCart('Meetha Paan', 40)">
+                        onclick="addToCart('Meetha Paan', 50)">
                         🛒 Add to Cart
                     </button>
 
@@ -170,15 +170,15 @@
         </article>
 
 
-        <!-- ================= SPECIAL PAAN ================= -->
+        <!-- ================= TOBACCO PAAN ================= -->
 
         <article class="product-card">
 
             <div class="product-image">
 
                 <img
-                    src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=600&q=80"
-                    alt="Special Paan"
+                    src="C:\Users\LENOVO\OneDrive\Desktop\index.html\images\Tobacco Paan.jpeg"
+                    alt="Tobacco Paan"
                 >
 
             </div>
@@ -187,27 +187,27 @@
             <div class="product-content">
 
                 <span class="product-category">
-                    🥥 Special Paan
+                       Tobacco Paan
                 </span>
 
                 <h3>
-                    Special Paan
+                    Tobacco Paan
                 </h3>
 
                 <p>
-                    Our premium special paan prepared
-                    for a memorable taste.
+                    Our Tobacco Paan prepared
+                    for a memorable taste. You can choose Kattha or Chuna paan as per your preference.
                 </p>
 
                 <div class="product-bottom">
 
                     <strong>
-                        ₹60
+                        ₹25
                     </strong>
 
                     <button
                         type="button"
-                        onclick="addToCart('Special Paan', 60)">
+                        onclick="addToCart('Tobacco Paan', 25)">
                         🛒 Add to Cart
                     </button>
 
@@ -225,7 +225,7 @@
             <div class="product-image">
 
                 <img
-                    src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80"
+                    src="C:\Users\LENOVO\OneDrive\Desktop\index.html\images\Mouth-Freshner.jpeg"
                     alt="Mouth Freshener"
                 >
 
@@ -235,7 +235,7 @@
             <div class="product-content">
 
                 <span class="product-category">
-                    🍬 Mouth Freshener
+                      Mouth Freshener
                 </span>
 
                 <h3>
@@ -250,12 +250,12 @@
                 <div class="product-bottom">
 
                     <strong>
-                        ₹100
+                        ₹30
                     </strong>
 
                     <button
                         type="button"
-                        onclick="addToCart('Mouth Freshener', 100)">
+                        onclick="addToCart('Mouth Freshener',30)">
                         🛒 Add to Cart
                     </button>
 
@@ -273,7 +273,7 @@
             <div class="product-image">
 
                 <img
-                    src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80"
+                    src="C:\Users\LENOVO\OneDrive\Desktop\index.html\images\Special-gift.jpeg"
                     alt="Special Gift Pack"
                 >
 
@@ -298,12 +298,12 @@
                 <div class="product-bottom">
 
                     <strong>
-                        ₹250
+                        ₹200
                     </strong>
 
                     <button
                         type="button"
-                        onclick="addToCart('Special Gift Pack', 250)">
+                        onclick="addToCart('Special Gift Pack', 200)">
                         🛒 Add to Cart
                     </button>
 
@@ -364,18 +364,21 @@
 
                 <!-- Mobile -->
 
-                <label for="mobile">
+                <label for="phone">
                     Mobile Number
                 </label>
 
                 <br>
 
                 <input
-                    type="tel"
-                    id="mobile"
-                    placeholder="Enter your mobile number"
-                    required
-                >
+    type="tel"
+    id="phone"
+    name="phone"
+    placeholder="Enter 10-digit mobile number"
+    pattern="[6-9][0-9]{9}"
+    maxlength="10"
+    inputmode="numeric"
+    required>
 
                 <br><br>
 
