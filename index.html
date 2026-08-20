@@ -1,0 +1,663 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rakesh Paan Bhandar | Chitaipur, Varanasi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <h1>🍃 Rakesh Paan Bhandar</h1>
+
+        <p>Chitaipur, Near Royal Hospital, Varanasi</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#event-booking">Event Booking</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#cart">
+    🛒 Cart (<span id="cartCount">0</span>)
+</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= HOME ================= -->
+
+<section id="home">
+
+    <div class="hero-content">
+
+        <p class="hero-tagline">
+            🍃 Traditional Taste • Varanasi
+        </p>
+
+        <h2>
+            Welcome to<br>
+            Rakesh Paan Bhandar
+        </h2>
+
+        <p class="hero-description">
+            Fresh paan, special flavours and quality products
+            made for every occasion.
+        </p>
+
+        <p class="hero-location">
+            📍 Chitaipur, Near Royal Hospital, Varanasi
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#products">
+                🛒 Shop Now
+            </a>
+
+            <a href="#event-booking">
+                🎉 Book for an Event
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <hr>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section id="categories">
+
+            <h2>Our Categories</h2>
+
+            <ul>
+
+                <li>🍃 Fresh Paan</li>
+
+                <li>🥥 Special Paan</li>
+
+                <li>🍬 Mouth Fresheners</li>
+
+                <li>🎁 Gift Packs</li>
+
+            </ul>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+<section id="products">
+
+    <h2>🍃 Our Products</h2>
+
+    <p class="products-intro">
+        Fresh flavours and quality products from
+        Rakesh Paan Bhandar.
+    </p>
+
+
+    <div class="product-grid">
+
+
+        <!-- ================= MEETHA PAAN ================= -->
+
+        <article class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80"
+                    alt="Meetha Paan"
+                >
+
+            </div>
+
+
+            <div class="product-content">
+
+                <span class="product-category">
+                    🍃 Fresh Paan
+                </span>
+
+                <h3>
+                    Meetha Paan
+                </h3>
+
+                <p>
+                    Traditional sweet paan with delicious
+                    flavours.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹40
+                    </strong>
+
+                    <button
+                        type="button"
+                        onclick="addToCart('Meetha Paan', 40)">
+                        🛒 Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ================= SPECIAL PAAN ================= -->
+
+        <article class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=600&q=80"
+                    alt="Special Paan"
+                >
+
+            </div>
+
+
+            <div class="product-content">
+
+                <span class="product-category">
+                    🥥 Special Paan
+                </span>
+
+                <h3>
+                    Special Paan
+                </h3>
+
+                <p>
+                    Our premium special paan prepared
+                    for a memorable taste.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹60
+                    </strong>
+
+                    <button
+                        type="button"
+                        onclick="addToCart('Special Paan', 60)">
+                        🛒 Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ================= MOUTH FRESHENER ================= -->
+
+        <article class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80"
+                    alt="Mouth Freshener"
+                >
+
+            </div>
+
+
+            <div class="product-content">
+
+                <span class="product-category">
+                    🍬 Mouth Freshener
+                </span>
+
+                <h3>
+                    Mouth Freshener
+                </h3>
+
+                <p>
+                    Refreshing mouth freshener for a
+                    pleasant taste after meals.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹100
+                    </strong>
+
+                    <button
+                        type="button"
+                        onclick="addToCart('Mouth Freshener', 100)">
+                        🛒 Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ================= GIFT PACK ================= -->
+
+        <article class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80"
+                    alt="Special Gift Pack"
+                >
+
+            </div>
+
+
+            <div class="product-content">
+
+                <span class="product-category">
+                    🎁 Gift Pack
+                </span>
+
+                <h3>
+                    Special Gift Pack
+                </h3>
+
+                <p>
+                    Premium assorted gift pack for
+                    special occasions.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹250
+                    </strong>
+
+                    <button
+                        type="button"
+                        onclick="addToCart('Special Gift Pack', 250)">
+                        🛒 Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+        <hr>
+
+
+        <!-- ================= EVENT BOOKING ================= -->
+
+        <section id="event-booking">
+
+            <h2>🎉 Book Us For Your Special Occasion</h2>
+
+            <p>
+                Make your celebration special with our
+                paan catering service.
+            </p>
+
+            <p>
+                Weddings • Birthdays • Anniversaries •
+                Parties • Corporate Events
+            </p>
+
+
+            <h3>📅 Event Booking</h3>
+
+
+            <form id="eventBookingForm">
+
+
+                <!-- Name -->
+
+                <label for="customer-name">
+                    Your Name
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <br><br>
+
+
+                <!-- Mobile -->
+
+                <label for="mobile">
+                    Mobile Number
+                </label>
+
+                <br>
+
+                <input
+                    type="tel"
+                    id="mobile"
+                    placeholder="Enter your mobile number"
+                    required
+                >
+
+                <br><br>
+
+
+                <!-- Event Type -->
+
+                <label for="event-type">
+                    Event Type
+                </label>
+
+                <br>
+
+                <select id="event-type" required>
+
+                    <option value="">
+                        Select Event
+                    </option>
+
+                    <option value="Wedding">
+                        Wedding
+                    </option>
+
+                    <option value="Birthday Party">
+                        Birthday Party
+                    </option>
+
+                    <option value="Anniversary">
+                        Anniversary
+                    </option>
+
+                    <option value="Corporate Event">
+                        Corporate Event
+                    </option>
+
+                    <option value="Private Party">
+                        Private Party
+                    </option>
+
+                    <option value="Other Occasion">
+                        Other Occasion
+                    </option>
+
+                </select>
+
+                <br><br>
+
+
+                <!-- Event Date -->
+
+                <label for="event-date">
+                    Event Date
+                </label>
+
+                <br>
+
+                <input
+                    type="date"
+                    id="event-date"
+                    required
+                >
+
+                <br><br>
+
+
+                <!-- Guests -->
+
+                <label for="guests">
+                    Number of Guests
+                </label>
+
+                <br>
+
+                <input
+                    type="number"
+                    id="guests"
+                    placeholder="Example: 200"
+                    min="1"
+                    required
+                >
+
+                <br><br>
+
+
+                <!-- Venue -->
+
+                <label for="venue">
+                    Event Venue
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="venue"
+                    placeholder="Enter event location"
+                    required
+                >
+
+                <br><br>
+
+
+                <!-- Requirements -->
+
+                <label for="message">
+                    Additional Requirements
+                </label>
+
+                <br>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Tell us about your requirements..."
+                ></textarea>
+
+                <br><br>
+
+
+                <button type="submit">
+                    📅 Send Booking Request
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================= CART ================= -->
+
+        <section id="cart">
+
+            <h2>🛒 Shopping Cart</h2>
+
+            <div id="cartItems">
+
+                <p>
+                    Your cart is currently empty.
+                </p>
+
+            </div>
+
+
+            <h3>
+                Total: ₹<span id="cartTotal">0</span>
+            </h3>
+
+
+            <br>
+
+
+            <button
+                type="button"
+                onclick="showCart()">
+                View Cart
+            </button>
+
+
+            <button
+                type="button"
+                onclick="goToCheckout()">
+                Checkout
+            </button>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about">
+
+            <p>
+                We aim to provide quality products and
+                a traditional paan experience to our customers.
+            </p>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact">
+
+            <h2>Contact Us</h2>
+
+
+            <address>
+
+                <strong>
+                    Rakesh Paan Bhandar
+                </strong>
+
+                <br>
+
+                Chitaipur
+
+                <br>
+
+                Near Royal Hospital
+
+                <br>
+
+                Varanasi, Uttar Pradesh, India
+
+            </address>
+
+
+            <p>
+                📞 Phone:
+                <a href="tel:+917238884058">
+                    +91 7238884058
+                </a>
+            </p>
+
+
+            <p>
+                📧 Email:
+
+                <a href="mailto:kadamstudio7@gmail.com">
+                    Send Email
+                </a>
+            </p>
+
+
+            <p>
+                📱 WhatsApp:
+
+                <a
+                    href="https://wa.me/917238884058"
+                    target="_blank"
+                    rel="noopener">
+                    Chat on WhatsApp
+                </a>
+            </p>
+              <h2>About Us</h2>
+
+            <p>
+                Rakesh Paan Bhandar is a local paan shop
+                located in Chitaipur, Varanasi, near
+                Royal Hospital.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <hr>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>
+            Rakesh Paan Bhandar
+        </h3>
+
+        <p>
+            Traditional Taste • Varanasi
+        </p>
+
+        <p>
+            © 2026 Rakesh Paan Bhandar.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

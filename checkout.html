@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Rakesh Paan Bhandar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <h1>🍃 Rakesh Paan Bhandar</h1>
+
+        <p>Checkout</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#products">Products</a>
+            <a href="index.html#cart">🛒 Cart</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= CHECKOUT ================= -->
+
+    <main>
+
+        <section id="checkout">
+
+            <h2>🛒 Checkout</h2>
+
+
+            <!-- ================= ORDER SUMMARY ================= -->
+
+            <div id="checkoutOrder">
+
+                <h3>Your Order</h3>
+
+                <div id="orderSummary">
+
+                    <p>Loading your cart...</p>
+
+                </div>
+
+
+                <h3>
+                    Total:
+                    ₹<span id="checkoutTotal">0</span>
+                </h3>
+
+            </div>
+
+
+            <hr>
+
+
+            <!-- ================= CUSTOMER DETAILS ================= -->
+
+            <form id="checkoutForm">
+
+                <h3>Customer Details</h3>
+
+                <br>
+
+
+                <!-- Name -->
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <br><br>
+
+
+                <!-- Phone -->
+
+                <label for="phone">
+                    Mobile Number
+                </label>
+
+                <br>
+
+                <input
+    type="tel"
+    id="phone"
+    name="phone"
+    placeholder="Enter 10-digit mobile number"
+    pattern="[6-9][0-9]{9}"
+    maxlength="10"
+    inputmode="numeric"
+    required
+>
+
+                <br><br>
+
+
+                <!-- Address -->
+
+                <label for="address">
+                    Delivery Address
+                </label>
+
+                <br>
+
+                <textarea
+                    id="address"
+                    name="address"
+                    rows="5"
+                    placeholder="Enter complete address"
+                    required
+                ></textarea>
+
+                <br><br>
+
+
+                <!-- City -->
+
+                <label for="city">
+                    City
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    value="Varanasi"
+                    required
+                >
+
+                <br><br>
+
+
+                <!-- ================= PAYMENT ================= -->
+
+<h3>Payment Method</h3>
+
+<br>
+
+<label class="payment-option">
+    <input
+        type="radio"
+        name="payment"
+        value="cod"
+        checked
+    >
+    Cash on Delivery
+</label>
+
+<br>
+
+<label class="payment-option">
+    <input
+        type="radio"
+        name="payment"
+        value="online"
+    >
+    Online Payment (UPI)
+</label>
+
+
+<!-- ================= UPI PAYMENT ================= -->
+
+<div id="upiPaymentBox" class="upi-payment-box">
+
+    <h3>💳 Pay Online Using UPI</h3>
+
+    <p>
+        Scan the QR code below using Paytm,
+        Google Pay, PhonePe or any UPI app.
+    </p>
+
+    <img
+        src="c:\Users\LENOVO\OneDrive\Desktop\upi-qr.jpeg.jpg"
+        alt="Rakesh Paan Bhandar UPI QR Code"
+        class="upi-qr"
+        >
+
+    <p>
+        Payment successful hone ke baad screenshot upload karein.
+    </p>
+
+    <p class="upi-instruction">
+        After completing the payment,
+        click <strong>Place Order</strong>.
+    </p>
+
+    <p class="payment-warning">
+        ⚠️ Please make sure the payment is successful
+        before placing your order.
+    </p>
+
+</div>
+
+
+                <br><br>
+
+
+                <!-- ================= PLACE ORDER ================= -->
+
+                <button type="submit">
+                    🛍️ Place Order
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Rakesh Paan Bhandar</h3>
+
+        <p>
+            Chitaipur, Near Royal Hospital, Varanasi
+        </p>
+
+        <p>
+            © 2026 Rakesh Paan Bhandar
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
