@@ -1596,6 +1596,7 @@ nav a:hover {
 /* ================= MOBILE ================= */
 
 @media (max-width: 700px) {
+
     .product-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -1605,15 +1606,19 @@ nav a:hover {
         width: 100%;
     }
 
+    /* Image ko crop nahi karega */
     .product-image {
+        width: 100%;
         height: auto;
-        aspect-ratio: 1 / 1;
+        aspect-ratio: auto;
+        overflow: visible;
     }
 
     .product-image img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;
+        object-fit: contain;
+        display: block;
     }
 
     .product-content {
