@@ -1067,7 +1067,6 @@ nav a:hover {
         url("https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1600&q=80");
 
     background-size: cover;
-
     background-position: center;
 
     color: white;
@@ -1481,11 +1480,9 @@ nav a:hover {
 }
 
 
-@media (max-width: 550px) {
-
+@media (max-width: 768px) {
     .product-grid {
         grid-template-columns: 1fr;
-
         gap: 20px;
     }
 
@@ -1590,4 +1587,101 @@ nav a:hover {
         width: 240px;
     }
 
+}
+/* ================= PRODUCT CARD FIX ================= */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.product-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-content {
+    display: block;
+    padding: 22px;
+}
+
+.product-category,
+.product-content h3,
+.product-content p,
+.product-bottom {
+    display: block;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1000px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .product-image {
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .product-content {
+        padding: 20px;
+    }
+
+    .product-content h3 {
+        font-size: 24px;
+    }
+
+    .product-content p {
+        min-height: auto;
+    }
+
+    .product-bottom {
+        flex-wrap: wrap;
+    }
 }
