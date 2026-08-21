@@ -1673,3 +1673,21 @@ nav a:hover {
         padding: 20px;
     }
 }
+/* ===== FINAL MOBILE PRODUCT IMAGE FIX ===== */
+
+@media (max-width: 700px) {
+
+    .product-image {
+        height: auto !important;
+        aspect-ratio: auto !important;
+        overflow: visible !important;
+    }
+
+    .product-image img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block;
+    }
+
+}
